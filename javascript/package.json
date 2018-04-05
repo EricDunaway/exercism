@@ -1,0 +1,28 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Exercism JavaScript",
+  "author": "Eric Dunaway",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "onchange": "^3.3.0",
+    "xo": "^0.20.2"
+  },
+  "scripts": {
+    "lint": "xo",
+    "submit": "exercism submit",
+    "fetch": "exercism fetch",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
+  },
+  "xo": {
+    "semicolon": false,
+    "extends": [
+      "prettier"
+    ],
+    "ignores": [
+      "**/*.spec.js"
+    ]
+  }
+}
